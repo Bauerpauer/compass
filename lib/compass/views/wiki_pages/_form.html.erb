@@ -1,0 +1,7 @@
+<form method="post">
+	<input type="hidden" name="_method" value="put">
+
+	<textarea name="content"><%= @page.content %></textarea>	
+	
+	<input type="submit" value="<%= @page.new_record? ? 'Save' : 'Update' -%>">
+</form>

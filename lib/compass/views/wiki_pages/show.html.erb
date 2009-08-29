@@ -1,0 +1,8 @@
+<p>
+	<%= WikiPage::format_text("/wiki", @page.content) %>
+</p>
+
+<a href="javascript: void(0);" onclick="document.getElementById('page-editor').setAttribute('style', 'display: block;');">Edit</a>
+<div style="display: none;" id="page-editor">
+	<%= render "wiki_pages/_form", :page => @page %>
+</div>
